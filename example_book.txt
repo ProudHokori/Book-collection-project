@@ -1,0 +1,28 @@
+nameTH,nameEN,author,publisher,isbn,status,category,rating,location
+นักเขียนนิยายที่รัก,My best novelist,Ruri Fujikawa,CN,9784796410441,read,set story,4.6,shelved
+ความลับ นักเขียนนิยายที่รัก,My best novelist secret,Ruri Fujikawa,CN Plus,9784796413305,read,set story,4.7,shelved
+นายท่านกับทาสรัก,Sensei to Aiken,Yasuda Shinogu,CN Plus,9784758079327,read,once story,5.0,shelved
+บาดแผลแห่งราคะ บทเริ่มต้น,Kannou Reminder (first),Unohana,CN,9784199607301,unread,set story,-,shelved
+บาดแผลแห่งราคะ บทสรุป,Kannou Reminder (last),Unohana,CN,978419960730A,unread,set story,-,shelved
+และแล้วผมก็รู้จักความรัก,And Then I know Love,Honoji Tohita,CN Plus,9784041081426,unread,once story,-,shelved
+รักนี้พรหมลิขิตจัดให้,I came across love of destiny,Michi Akuta,CN Plus,9784199607295,read,set story,4.6,shelved
+รักนะแต่ไม่แสดงออก เล่ม 1,Don't be shy!! 1,Aki Yukura,CN Plus,9784253155335,read,set story,4.8,shelved
+รักนะแต่ไม่แสดงออก เล่ม 2,Don't be shy!! 2,Aki Yukura,CN Plus,9784253155342,read,set story,4.8,shelved
+รักต้องห้ามกับพี่เขย,ICON,Nekono Mariko,CN,9784403665219,read,once story,4.7,shelved
+อีโรติก รอยัล,Erotic Royal,Mizu Hanashiba,CN,9784799727201,read,once story,4.8,shelved
+สัญญากับนายปีศาจ,A Contract with the devil,Haru,CN,9784799730515,read,set story,4.8,shelved
+สัญญากับปีศาจ วิธีรักที่ขี้โกงของเขา,A Contract with the devil 2,Haru,CN,9784799738269,unread,set story,-,unshelved
+ทาสรักบรรดาศักดิ์,Danshaku no Aijin,Takenaka Sei,CN,9784799731161,read,once story,4.7,shelved
+อย่าทิ้งกันนะ ฮีโร่ของผม เล่ม 1,Don't throw me my hero 1,HimodaQ,CN,9784799734780,read,set story,4.7,shelved
+อย่าทิ้งกันนะ ฮีโร่ของผม เล่ม 2,Don't throw me my hero 2,HimodaQ,CN Plus,9784799742877,read,set story,4.7,shelved
+บันทึกรัก หลังเวที,Backstage prince,Gomita Tepi,CN,9784865894073,read,set story,4.8,shelved
+หนุ่มสุดกวน ป่วนหัวใจนายหน้าหวาน,I'm looking for serious love,Rakuta Shoko,CN Plus,9784865544886,unread,once story,-,shelved
+ค่ำคืนที่ไม่มีความสุข,Unhappy How night,Nanatsuno Wataru,CN,9784865894974,read,once story,4.4,shelved
+วิธีการยั่วยวน,Method of TEMPTATION,Kagine,CN,9784866531144,read,many story,4.4,shelved
+,,,,,,,,
+
+
+
+
+
+
