@@ -1,14 +1,52 @@
 import json
-from prettytable import PrettyTable
 
 
 class BookDB:
-    def __init__(self, name='book_database'):
-        self.name = name
-        self.booklist = []
+    """
+        This class is used to manage all about data file in this app.
+    and have two attributes that are
+    filename : string of name of json filename that store all Book details
+    fileID : string of book ID's txt filename that store all number of Book's ID
+    book_list : a list of Book object
+    """
+
+    def __init__(self, filename='fileBook.json', fileID='fileID.txt'):
+        """ Initialize filename of database to store all book data
+        and initialize list of book
+        :param filename: string of book's json filename
+        :param fileID: string of book ID's txt filename
+        """
+        self.__filename = filename
+        self.__fileID = fileID
+        self.book_list = []
+
+    @property
+    def filename(self):
+        return self.__filename
+
+    @filename.setter
+    def filename(self, value):
+        if value[-5:] != '.json':
+            raise ValueError('filename must be a json file')
+        self.__filename = value
+
+    @property
+    def fileID(self):
+        return self.__fileID
+
+    @fileID.setter
+    def fileID(self, value):
+        if value[-4:] != '.txt':
+            raise ValueError('fileID must be a txt file')
+        self.__fileID = value
 
     def add_book(self, book):
-        self.booklist.append(book)
+        """ Use to add a new book data to json database file
+        :param book: object of Book class
+        """
+        # append book object in list
+        self.book_list.append(book)
+        # create nested dictionary of new book
         new_book = {
             book.id: {
                 "nameTH": book.nameTH,
@@ -23,126 +61,158 @@ class BookDB:
                 "cover": book.cover
             }
         }
+
         try:
-            with open(f"{self.name}.json", "r") as data_file:
+            # try to read file with given filename
+            with open(self.filename, "r") as data_file:
                 data = json.load(data_file)
         except FileNotFoundError:
-            with open(f"{self.name}.json", "w") as data_file:
+            # If filename above isn't found let write a new file with given filename
+            with open(self.filename, "w") as data_file:
                 json.dump(new_book, data_file, indent=4)
         else:
+            # update new data and overwrite it into given filename
             data.update(new_book)
-            with open(f"{self.name}.json", "w") as data_file:
+            with open(self.filename, "w") as data_file:
                 json.dump(data, data_file, indent=4)
 
-    def update_whole(self, id_, **detail):
+    def update_whole(self, bookID, **detail):
+        """ Use to update all details of book that given book ID to json file
+        :param bookID: string of book's ID
+        :param detail: dictionary of string that pack all detail about book
+        """
         try:
-            with open(f"{self.name}.json", "r") as data_file:
+            # try to read file with given filename
+            with open(self.filename, "r") as data_file:
                 data = json.load(data_file)
         except FileNotFoundError:
-            print(f"File '{self.name}.json' is Not Found")
+            # If filename above isn't found just print it in console
+            print(f"File '{self.filename}' is Not Found")
         else:
+            # update data and overwrite it into given filename
             details = ["nameTH", "nameEN", "author", "publisher", "isbn",
                        "status", "category", "rating", "location", "cover"]
             for each in details:
-                data[id_][each] = detail[each]
-        with open(f"{self.name}.json", "w") as data_file:
+                data[bookID][each] = detail[each]
+        with open(self.filename, "w") as data_file:
             json.dump(data, data_file, indent=4)
 
-    def update_each_detail(self, id_, updatable, detail):
+    def update_each_detail(self, bookID, updatable, detail):
+        """ Update specific detail of book that given book ID to json file
+        :param bookID: string of book's ID
+        :param updatable: string of updatable topic detail that user want to update
+        :param detail: string of detail of book that user want to update
+        """
         try:
-            with open(f"{self.name}.json", "r") as data_file:
+            # try to read file with given filename
+            with open(self.filename, "r") as data_file:
                 data = json.load(data_file)
         except FileNotFoundError:
-            print(f"File '{self.name}.json' is Not Found")
+            # If filename above isn't found just print it in console
+            print(f"File '{self.filename}' is Not Found")
         else:
-            data[id_][updatable] = detail
-            with open(f"{self.name}.json", "w") as data_file:
+            # update specific new data and overwrite it into given filename
+            data[bookID][updatable] = detail
+            with open(self.filename, "w") as data_file:
                 json.dump(data, data_file, indent=4)
 
-    def get_book_from_json(self, id_):
+    def get_a_book(self, bookID):
+        """ Get a book by slicing a dictionary with given book ID
+        :param bookID: string of book's ID
+        :return: a dictionary of a book
+        """
         try:
-            with open(f"{self.name}.json", "r") as data_file:
-                return json.load(data_file)[id_]
+            # try to read file with given filename and return sliced dictionary
+            with open(self.filename, "r") as data_file:
+                return json.load(data_file)[bookID]
         except KeyError:
             return False
         except FileNotFoundError:
-            print(f"File '{self.name}.json' is Not Found")
+            # If filename above isn't found just print it in console
+            print(f"File '{self.filename}' is Not Found")
 
     def find_book_detail(self, findable, detail):
+        """ Find book by findable detail and return book ID of that book
+        :param findable: string of findable topic detail that user want to find
+        :param detail: detail of book that user want to find
+        :return: string of book's ID if available
+        """
         try:
-            with open(f"{self.name}.json", "r") as data_file:
+            # try to read file with given filename
+            with open(self.filename, "r") as data_file:
                 data = json.load(data_file)
         except FileNotFoundError:
-            print(f"File '{self.name}.json' is Not Found")
+            # If filename above isn't found just print it in console
+            print(f"File '{self.filename}' is Not Found")
         else:
             for bookID, details in data.items():
                 try:
-                    print(details[findable], detail)
-
                     if details[findable] == detail:
                         return bookID
                 except KeyError:
                     return False
 
-    def show_all_book(self):
+    def get_all_book(self):
+        """ Get dictionary of all book from json file
+        :return: dictionary of all book
+        """
         try:
-            with open(f"{self.name}.json", "r") as data_file:
-                all_book = json.load(data_file)
+            # try to read file with given filename and return dictionary
+            with open(self.filename, "r") as data_file:
+                return json.load(data_file)
         except FileNotFoundError:
-            print(f"File '{self.name}.json' is Not Found")
-        else:
-            self.create_table(all_book)
+            # If filename above isn't found just print it in console
+            print(f"File '{self.filename}' is Not Found")
 
-    def filter(self, filterable, detail):
+    def filter_book(self, filterable, detail):
+        """ Filter by the given filterable topic and detail and return filtered dictionary
+        :param filterable: string of filterable topic detail that user want to filter
+        :param detail: string of detail of book that user want to update
+        :return: a dictionary of filtered book detail
+        """
         try:
-            with open(f"{self.name}.json", "r") as data_file:
+            # try to read file with given filename
+            with open(self.filename, "r") as data_file:
                 all_book = json.load(data_file)
         except FileNotFoundError:
-            print(f"File '{self.name}.json' is Not Found")
+            # If filename above isn't found just print it in console
+            print(f"File '{self.filename}' is Not Found")
         else:
             filtered = {}
             for bookID, details in all_book.items():
+                # check condition and store it in filtered dictionary
                 if details[filterable] == detail:
                     filtered[bookID] = details
-            self.create_table(filtered)
+            return filtered
 
-    @staticmethod
-    def get_last_id(fileID):
-        try:
-            with open(fileID, "r") as file:
-                lastID = file.read().splitlines()
-
-        except Exception:
-            with open(fileID, "w") as file:
-                lastID = file.write('0' + '\n')
-        finally:
-            return int(lastID[-1])
-
-    @staticmethod
-    def manage_id(fileID, ID):
-        with open(fileID, "a") as file:
-            file.write(str(ID) + '\n')
-
-    def get_book_from_list(self, id_):
-        for book in self.booklist:
-            if book.id == id_:
+    def get_book_from_list(self, bookID):
+        """ Get a book by slicing list of book object with given book ID """
+        for book in self.book_list:
+            if book.id == bookID:
                 return book
 
-    @staticmethod
-    def create_table(dict_):
-        table = PrettyTable()
-        table.field_names = ['Book ID', 'Name of Book(EN)', 'Author', 'Publisher',
-                             'ISBN', 'Status', 'Category', 'Rating', 'Location', 'Cover']
-        for bookID, details in dict_.items():
-            table.add_row([bookID, details['nameEN'], details['author'],
-                           details['publisher'], details['isbn'], details['status'],
-                           details['category'], details['rating'],
-                           details['location'], details['cover']])
-        print(table)
+    def get_last_id(self):
+        """ Use to get last number of fileID """
+        try:
+            # try to read file with given filename
+            with open(self.fileID, "r") as file:
+                # get last number from file
+                return int(file.read().splitlines()[-1])
+
+        except FileNotFoundError:
+            # If file not found just create and write 0 in given filename
+            with open(self.fileID, "w") as file:
+                file.write('0' + '\n')
+            return 0
+
+    def manage_id(self, ID):
+        """ Use to append given ID into given fileID name"""
+        with open(self.fileID, "a") as file:
+            file.write(str(ID) + '\n')
 
 
 if __name__ == '__main__':
     database = BookDB('data')
     print(database.get_book_from_list('024'))
-    database.show_all_book()
+    database.get_all_book()
     # database.filter('author', 'proud')

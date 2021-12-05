@@ -1,93 +1,158 @@
-# Book Collection Project (BCP)
+# Book Collection Project
+
+---
+The main objectives of this project is for conclude and apply 
+all lesson in the 01219114 Computer Programming I course and another 
+objective is for creating program that can help user to store, find 
+and manage the data of his/her book collection.
+
+![logo.png](md/logo_app.png)
+
+
+
+##♥ Overview and features ♥
+
+---
+![img_1.png](md/menu_page.png)
+
+This application is used for manage everything about book collection data. 
+And this all of features in my application.
+
+### ♥ Add a new book
+user can add new book into database.
+* program will generate their own book ID automatically.
+* user can check all details and book's cover before store it in database.
+     
+    ![img_2.png](md/add_page.png)
+     
+### ♥ Find a book
+user can find book from database.
+* user can find book by _4 details_ that are 
+  * Book ID
+  * NameTH
+  * NameEN
+  * ISBN
+* app will show all details and book's cover on screen.
+
+    ![img_2.png](md/find_page.png)
+
+### ♥ Filter book
+user can filter book from database.
+   * user can filter book by 8 details that are
+      - NameEN
+      - Author
+      - Publisher
+      - Status
+      - Category
+      - Rating
+      - Location
+      - Cover
+   * app will show all filtered book in form of table on console.
+  
+        ![img_2.png](md/filter_page.png)
+
+### ♥ Update book's details
+user can update book's detail in database.
+   * have 2 features that user can use to update are
+      - update whole book : used to update all details in 
+        that book but still use original ID
+      - update specific detail : used to update specific detail, 
+        and the detail that can update are
+        - Status
+        - Rating
+        - Location
+        - Cover
+
+     ![img_2.png](md/update_page.png)
+
+### ♥ Show all books
+app will show all book in collection in form of table on console.
+  
+![img.png](img.png)
+  
+### ♥ Quit menu
+mostly step in app allow user to press q to quit 
+and back to menu or to exit program.
+
+![img_3.png](md/quit.png)
+
+### ♥ Change theme
+user can run and choose theme in `app.py` to change 
+theme in application. the theme that available now are
+* Default theme
+* Dark theme
+* Mono theme
+* Peach theme
+* Winter theme
+* Yaoi theme
+    
+![img.png](md/all_theme.png)
+
+
+##♥ Program's Requirement ♥
 ***
-The main objectives of this project is for concluding and applying 
-all lesson in Computer Programming I subject and another objective
-is for creating program that can help user to store, find and manage
-the information of his/her book collection
-.
+These are required python version,modules and tools 
+that need to download before running the program.
+
+### ♥ Python version
+* [Python 3.9](https://www.python.org/downloads/)
+### ♥ Modules
+look at all module that need to download in `requirements.txt`.
+* `turtle` : use for all graphic.
+* `prettytable` : use for create and print table on console.
+* `time` : use sleep function to delay some graphic.
+* `os` : use for access picture file in each folder.
+* `json` : use json file to store data.
+
+Note : font `Consolas` is required for better experience, 
+click [here](https://github.com/tsenart/sight/raw/master/fonts/Consolas.ttf) to download.
+
+##♥ Program's design ♥
+***
+My application consists of 3 main classes that are 
+`Book`, `BookDB` and `Display`. and have 2 classes are 
+ConsoleColor and ScreenColor for decorate the program.
+
+### ♥ Class `Book` 
+This class is used to represent a book and each book will have
+their own details which was used to create attributes.
+In addition, each book will have their own ID that was created
+automatically.
+### ♥ Class `BookDB`
+This class is used to manage all about data file in this app.
+and have two attributes that are
+### ♥ Class `Display`
+This class is used to display all the features on Python Turtle
+Graphic screen and show the table of data on console.
+### ♥ Class `ConsoleColor` and `ScreenColor`
+This 2 class are use for decorating color,format and theme in application.
+
+### ♥ UML class diagram 
+![img_1.png](book_collection_diagram.png)
 
 
-## Modules
+##♥ Code structure ♥
+***
+This program consists of 5 python files for running program. 2 database
+files that are a json file and a txt file. And 3 folder of picture.
+### ♥ Python file
+* `app.py ` : This file is used for **running program** and enter to the application.
+* `book.py `: This file is used for contain **Book** class.
+* `bookdatabase.py` : This file is used for contain **BookDB** class.
+* `display.py` : This file is used for contain **Display** class.
+* `color.py` : This file is used for contain **ScreenColor** and **ConsoleColor** class.
+### ♥ Database file
+* `fileBook.json` : This is an example json file that contain all data of all books
+  in collection.
+* `fileID.txt` : This is an example txt file that contain all ID of book that
+  used to running ID in each book.
+### ♥ Picture folder
+* `cover folder` : This folder is used to store all of book's cover picture.
+* `pointer folder` : This folder is used to store all of pointer picture that
+  used for decorate theme app.
+* `picture folder` : This folder is used to store all of decorated picture
 
-My application consists of three main modules that are `book.py`, `bookdata.py` and `display.py`. 
+---
+ ###**Hope you got a great experience, Thank you ♥**
 
-
-### 1. Module `book.py` 
-
-
-This module contains the `Book` class for creating a book.
-
-
-The provided `account.py` contains only some template code that you must
-complete yourself. 
-
-### 2. Module `bookdatabase.py`
-
-This module contains the `BankDB` class for creating a database file.
-
-    class BankDB:
-        def __init__(self, name):
-            self.name = name
-
-
-        def insert(self, bank_account):
-            # add your implementation
-
-
-        def search(self, account_number):
-            # add your implementation
-
-
-        def delete(self, account_number):
-            # add your implementation
-
-
-        def record_transaction(self, account, amount):
-            # add your implementation
-
-
-        def __repr__(self):
-            # add your implementation
-
-The provided `database.py` contains only some template code that you must
-complete yourself.
-
-
-## Running Tests
-
-Tests can be performed by running the `main.py`.  They use the `doctest` to run all
-examples found inside all the documentation files in the `docs` directory.
-
-    python main.py
-
-## Your Task
-
-1. Complete the implementations of the `account.py` and `database.py`
-   modules.  Make sure they all pass the tests.
-2. Run `main.py` to see the result and inspect the correctness.
-3. Modify the `summary.txt` file.  In this summary, tell us what you have
-   completed and what you have not.
-
-**Notes:** Please do not change any file inside the `docs` directory.  These
-files will be used to run tests against your submitted code.
-
-
-## Submission
-
-1. Check that everything is working as expected, i.e., all the tests are
-   passed.
-2. Commit your code with all related files
-    * `account.py`
-    * `database.py`
-    * `summary.txt`
-3. Push the commit to GitHub
-4. Wait for GitHub Classroom to mail back your grading result.
-
-## Grading Criteria
-
-1. **Correctness (70%):** Your program must pass all the doctests.
-3. **Cleanliness (30%):** Your program must follow the PEP8 convention.  Variable
-   names are meaningful.  Docstrings are written for all methods and
-   functions.  Comments are added at certain points for others to understand
-   your code easily.
-   
+---   

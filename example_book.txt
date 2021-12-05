@@ -15,7 +15,7 @@ nameTH,nameEN,author,publisher,isbn,status,category,rating,location
 ทาสรักบรรดาศักดิ์,Danshaku no Aijin,Takenaka Sei,CN,9784799731161,read,once story,4.7,shelved
 อย่าทิ้งกันนะ ฮีโร่ของผม เล่ม 1,Don't throw me my hero 1,HimodaQ,CN,9784799734780,read,set story,4.7,shelved
 อย่าทิ้งกันนะ ฮีโร่ของผม เล่ม 2,Don't throw me my hero 2,HimodaQ,CN Plus,9784799742877,read,set story,4.7,shelved
-บันทึกรัก หลังเวที,Backstage prince,Gomita Tepi,CN,9784865894073,read,set story,4.8,shelved
+บันทึกรัก หลังเวที,Backstage prince,Gomita Tepi,CN,9784865894073,read,once story,4.8,shelved
 หนุ่มสุดกวน ป่วนหัวใจนายหน้าหวาน,I'm looking for serious love,Rakuta Shoko,CN Plus,9784865544886,unread,once story,-,shelved
 ค่ำคืนที่ไม่มีความสุข,Unhappy How night,Nanatsuno Wataru,CN,9784865894974,read,once story,4.4,shelved
 วิธีการยั่วยวน,Method of TEMPTATION,Kagine,CN,9784866531144,read,many story,4.4,shelved
