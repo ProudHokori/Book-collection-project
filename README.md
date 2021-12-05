@@ -1,5 +1,4 @@
 # Book Collection Project
-
 ---
 The main objectives of this project is for conclude and apply 
 all lesson in the 01219114 Computer Programming I course and another 
@@ -11,7 +10,6 @@ and manage the data of his/her book collection.
 
 
 ## Overview and features
-
 ---
 <p align="center">
 <img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/menu_page.png">
@@ -92,7 +90,7 @@ theme in application. the theme that available now are
 
 
 ##  Program's Requirement 
-***
+---
 These are required python version,modules and tools 
 that need to download before running the program.
 
