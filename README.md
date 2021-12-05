@@ -10,7 +10,7 @@ and manage the data of his/her book collection.
 
 
 
-##♥ Overview and features ♥
+## ♥ Overview and features ♥
 
 ---
 ![img_1.png](md/menu_page.png)
@@ -68,7 +68,7 @@ user can update book's detail in database.
 ### ♥ Show all books
 app will show all book in collection in form of table on console.
   
-![img.png](img.png)
+![img.png](md/console_table.png)
   
 ### ♥ Quit menu
 mostly step in app allow user to press q to quit 
@@ -89,7 +89,7 @@ theme in application. the theme that available now are
 ![img.png](md/all_theme.png)
 
 
-##♥ Program's Requirement ♥
+## ♥ Program's Requirement ♥
 ***
 These are required python version,modules and tools 
 that need to download before running the program.
