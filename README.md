@@ -142,7 +142,7 @@ files that are a json file and a txt file. And 3 folder of picture.
 * `display.py` : This file is used for contain **Display** class.
 * `color.py` : This file is used for contain **ScreenColor** and **ConsoleColor** class.
 ### ♥ Database file
-* `fileBook.json` : This is an example json file that contain all data of all books
+* `bookdatabase.json` : This is an example json file that contain all data of all books
   in collection.
 * `fileID.txt` : This is an example txt file that contain all ID of book that
   used to running ID in each book.
