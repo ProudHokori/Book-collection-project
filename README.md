@@ -1,6 +1,6 @@
-***
-# Book Collection Project
-***
+
+<p align="center"> # Book Collection Project </p>
+
 The main objectives of this project is for conclude and apply 
 all lesson in the 01219114 Computer Programming I course and another 
 objective is for creating program that can help user to store, find 
@@ -10,8 +10,9 @@ and manage the data of his/her book collection.
 </p>
 
 ***
+
 ## Overview and features
-***
+
 <p align="center">
 <img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/menu_page.png">
 </p>
@@ -90,8 +91,9 @@ theme in application. the theme that available now are
 ![img.png](md/all_theme.png)
 
 ***
+
 ##  Program's Requirement 
-***
+
 These are required python version,modules and tools 
 that need to download before running the program.
 
@@ -109,8 +111,9 @@ Note : font `Consolas` is required for better experience,
 click [here](https://github.com/tsenart/sight/raw/master/fonts/Consolas.ttf) to download.
 
 ***
+
 ## Program's design 
-***
+
 My application consists of 3 main classes that are 
 `Book`, `BookDB` and `Display`. and have 2 classes are 
 ConsoleColor and ScreenColor for decorate the program.
@@ -133,8 +136,9 @@ This 2 class are use for decorating color,format and theme in application.
 ![img_1.png](book_collection_diagram.png)
 
 ***
+
 ## Code structure 
-***
+
 This program consists of 5 python files for running program. 2 database
 files that are a json file and a txt file. And 3 folder of picture.
 ###  Python file
@@ -155,5 +159,5 @@ files that are a json file and a txt file. And 3 folder of picture.
 * `picture folder` : This folder is used to store all of decorated picture
 
 ***
- ### **Hope you got a great experience, Thank you **
+ <p align=center> ### **Hope you got a great experience, Thank you ** </p>
 ***
