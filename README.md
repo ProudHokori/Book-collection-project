@@ -159,5 +159,5 @@ files that are a json file and a txt file. And 3 folder of picture.
 * `picture folder` : This folder is used to store all of decorated picture
 
 ***
-  ### **<p align=center>Hope you got a great experience, Thank you</p> ** 
+  ### <p align=center>**Hope you got a great experience, Thank you**</p>
 ***
