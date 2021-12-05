@@ -6,7 +6,7 @@ all lesson in the 01219114 Computer Programming I course and another
 objective is for creating program that can help user to store, find 
 and manage the data of his/her book collection.
 
-<p align="center"> ![logo.png](md/logo_app.png) </p>
+![logo.png](md/logo_app.png)
 
 
 
@@ -135,7 +135,7 @@ This 2 class are use for decorating color,format and theme in application.
 ***
 This program consists of 5 python files for running program. 2 database
 files that are a json file and a txt file. And 3 folder of picture.
-### ♥ Python file
+###  Python file
 * `app.py ` : This file is used for **running program** and enter to the application.
 * `book.py `: This file is used for contain **Book** class.
 * `bookdatabase.py` : This file is used for contain **BookDB** class.
@@ -153,6 +153,6 @@ files that are a json file and a txt file. And 3 folder of picture.
 * `picture folder` : This folder is used to store all of decorated picture
 
 ---
- ### **Hope you got a great experience, Thank you ♥**
+ ### **Hope you got a great experience, Thank you **
 
 ---   
