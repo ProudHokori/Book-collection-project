@@ -1,5 +1,5 @@
 # Book Collection Project
----
+***
 The main objectives of this project is for conclude and apply 
 all lesson in the 01219114 Computer Programming I course and another 
 objective is for creating program that can help user to store, find 
@@ -10,7 +10,7 @@ and manage the data of his/her book collection.
 
 
 ## Overview and features
----
+***
 <p align="center">
 <img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/menu_page.png">
 </p>
@@ -90,7 +90,7 @@ theme in application. the theme that available now are
 
 
 ##  Program's Requirement 
----
+***
 These are required python version,modules and tools 
 that need to download before running the program.
 
@@ -152,7 +152,6 @@ files that are a json file and a txt file. And 3 folder of picture.
   used for decorate theme app.
 * `picture folder` : This folder is used to store all of decorated picture
 
----
+***
  ### **Hope you got a great experience, Thank you **
-
----   
+***
