@@ -1,5 +1,5 @@
 
-<p align="center"> # Book Collection Project </p>
+# <p align="center"> Book Collection Project </p>
 
 The main objectives of this project is for conclude and apply 
 all lesson in the 01219114 Computer Programming I course and another 
