@@ -1,3 +1,4 @@
+***
 # Book Collection Project
 ***
 The main objectives of this project is for conclude and apply 
@@ -8,7 +9,7 @@ and manage the data of his/her book collection.
 <img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/logo_app.png">
 </p>
 
-
+***
 ## Overview and features
 ***
 <p align="center">
@@ -88,7 +89,7 @@ theme in application. the theme that available now are
     
 ![img.png](md/all_theme.png)
 
-
+***
 ##  Program's Requirement 
 ***
 These are required python version,modules and tools 
@@ -107,6 +108,7 @@ look at all module that need to download in `requirements.txt`.
 Note : font `Consolas` is required for better experience, 
 click [here](https://github.com/tsenart/sight/raw/master/fonts/Consolas.ttf) to download.
 
+***
 ## Program's design 
 ***
 My application consists of 3 main classes that are 
@@ -130,7 +132,7 @@ This 2 class are use for decorating color,format and theme in application.
 ###  UML class diagram 
 ![img_1.png](book_collection_diagram.png)
 
-
+***
 ## Code structure 
 ***
 This program consists of 5 python files for running program. 2 database
