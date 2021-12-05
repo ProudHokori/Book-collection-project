@@ -2,7 +2,7 @@
 # <p align="center"> Book Collection Project </p>
 
 The main objectives of this project is for conclude and apply 
-all lesson in the 01219114 Computer Programming I course and another 
+all lesson in the Computer Programming I course, Kasetsart University and another 
 objective is for creating program that can help user to store, find 
 and manage the data of his/her book collection.
 <p align="center">
