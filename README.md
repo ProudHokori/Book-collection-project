@@ -1,7 +1,6 @@
 
 # <p align='center'> Book Collection Project </p>
 
----
 The main objectives of this project are for concluding and applying
 all lessons of the Computer Programming I course, Kasetsart University.
 Another objective is for creating program which can help user to store, find 
@@ -86,9 +85,9 @@ theme of the application. The themes that are available now :
     
 ![img.png](md/all_theme.png)
 
-
+---
 ## ♥ Program's Requirements ♥
-***
+
 These are required python version, modules and tools 
 that user need to download before running the program.
 
