@@ -7,7 +7,7 @@ all lessons of the Computer Programming I course, Kasetsart University.
 Another objective is for creating program which can help user to store, find 
 and manage the data of their book collection.
 <p align='center'>
-![logo.png](md/logo_app.png)
+<img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/logo_app.png">
 </p>
 
 ---
