@@ -6,14 +6,14 @@ The main objectives of this project are for concluding and applying
 all lessons of the Computer Programming I course, Kasetsart University.
 Another objective is for creating program which can help user to store, find 
 and manage the data of their book collection.
-
+<p align='center'>
 ![logo.png](md/logo_app.png)
-
-
-
-## ♥ Overview and features ♥
+</p>
 
 ---
+## ♥ Overview and features ♥
+
+
 ![img_1.png](md/menu_page.png)
 
 This application is used for managing everything about book collection data. 
@@ -105,8 +105,9 @@ Required modules in `requirements.txt`.
 Note : font `Consolas` is required for better experience, 
 click [here](https://github.com/tsenart/sight/raw/master/fonts/Consolas.ttf) to download.
 
-##♥ Program's design ♥
-***
+---
+## ♥ Program's design ♥
+
 My application consists of three main classes which are 
 `Book`, `BookDB` and `Display`. It has two classes which are 
 ConsoleColor and ScreenColor, for decorating the program.
@@ -126,9 +127,9 @@ These two classes are used for decorating color, format and theme in the applica
 ### ♥ UML class diagram 
 ![img_1.png](book_collection_diagram.png)
 
+---
+## ♥ Code structure ♥
 
-##♥ Code structure ♥
-***
 This program consists of five python files to run the program. 
 Two database files, which are a json file and a txt file, 
 and three folders of pictures.  
@@ -149,6 +150,6 @@ and three folders of pictures.
 * `picture folder` : Stores all pictures for decoration.
 
 ---
- ###**Hope you have a great experience. Thank you. ♥**
+ ### **Hope you have a great experience. Thank you. ♥**
 
 ---   
