@@ -1,46 +1,45 @@
 
-# <p align="center"> Book Collection Project </p>
+# <p align='center'> Book Collection Project </p>
 
-The main objectives of this project is for conclude and apply 
-all lesson in the Computer Programming I course, Kasetsart University and another 
-objective is for creating program that can help user to store, find 
-and manage the data of his/her book collection.
-<p align="center">
-<img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/logo_app.png">
-</p>
+---
+The main objectives of this project are for concluding and applying
+all lessons of the Computer Programming I course, Kasetsart University.
+Another objective is for creating program which can help user to store, find 
+and manage the data of their book collection.
 
-***
+![logo.png](md/logo_app.png)
 
-## Overview and features
 
-<p align="center">
-<img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/menu_page.png">
-</p>
 
-This application is used for manage everything about book collection data. 
-And this all of features in my application.
+## ♥ Overview and features ♥
 
-###  Add a new book
-user can add new book into database.
-* program will generate their own book ID automatically.
-* user can check all details and book's cover before store it in database.
+---
+![img_1.png](md/menu_page.png)
+
+This application is used for managing everything about book collection data. 
+And these are all features of my application.
+
+### ♥ Add a new book
+User can add new books into database.
+* Program will generate their own book's ID automatically.
+* User can check all details and book's cover before storing it in database.
      
     ![img_2.png](md/add_page.png)
      
-###  Find a book
-user can find book from database.
-* user can find book by _4 details_ that are 
+### ♥ Find a book
+User can find books from database.
+* User can find a book by _4 details_ which are 
   * Book ID
   * NameTH
   * NameEN
   * ISBN
-* app will show all details and book's cover on screen.
+* App will show all details and book cover on screen.
 
     ![img_2.png](md/find_page.png)
 
-###  Filter book
-user can filter book from database.
-   * user can filter book by 8 details that are
+### ♥ Filter books
+User can filter books from database.
+   * User can filter books by 8 details which are
       - NameEN
       - Author
       - Publisher
@@ -49,17 +48,15 @@ user can filter book from database.
       - Rating
       - Location
       - Cover
-   * app will show all filtered book in form of table on console.
+   * App will show all filtered books in a form of table on console.
   
         ![img_2.png](md/filter_page.png)
 
-###  Update book's details
-user can update book's detail in database.
-   * have 2 features that user can use to update are
-      - update whole book : used to update all details in 
-        that book but still use original ID
-      - update specific detail : used to update specific detail, 
-        and the detail that can update are
+### ♥ Update book's details
+User can update book's details in database.
+   * This feature is capable of 2 things which are
+      - updating a whole book : update all details of a book except original ID
+      - update specific detail : update a specific details which are
         - Status
         - Rating
         - Location
@@ -67,20 +64,19 @@ user can update book's detail in database.
 
      ![img_2.png](md/update_page.png)
 
-###  Show all books
-app will show all book in collection in form of table on console.
+### ♥ Show all books
+App will show all books in collection in a form of table on console.
   
 ![img.png](md/console_table.png)
   
-###  Quit menu
-mostly step in app allow user to press q to quit 
-and back to menu or to exit program.
+### ♥ Quit menu
+Most of the uses of the button Q are used to quit the menu or to exit the program.
 
 ![img_3.png](md/quit.png)
 
-###  Change theme
-user can run and choose theme in `app.py` to change 
-theme in application. the theme that available now are
+### ♥ Change theme
+User can run and choose theme in `app.py` to change 
+theme of the application. The themes that are available now :
 * Default theme
 * Dark theme
 * Mono theme
@@ -90,74 +86,69 @@ theme in application. the theme that available now are
     
 ![img.png](md/all_theme.png)
 
+
+## ♥ Program's Requirements ♥
 ***
+These are required python version, modules and tools 
+that user need to download before running the program.
 
-##  Program's Requirement 
-
-These are required python version,modules and tools 
-that need to download before running the program.
-
-###  Python version
+### ♥ Python version
 * [Python 3.9](https://www.python.org/downloads/)
-###  Modules
-look at all module that need to download in `requirements.txt`.
-* `turtle` : use for all graphic.
-* `prettytable` : use for create and print table on console.
-* `time` : use sleep function to delay some graphic.
-* `os` : use for access picture file in each folder.
-* `json` : use json file to store data.
+### ♥ Modules
+Required modules in `requirements.txt`.
+* `turtle` : used for all graphics.
+* `prettytable` : used for creating and printing table on console.
+* `time` : to use sleep function to delay some graphics.
+* `os` : used for accessing picture file in each folder.
+* `json` : to generate a json file to store the data
 
 Note : font `Consolas` is required for better experience, 
 click [here](https://github.com/tsenart/sight/raw/master/fonts/Consolas.ttf) to download.
 
+##♥ Program's design ♥
 ***
+My application consists of three main classes which are 
+`Book`, `BookDB` and `Display`. It has two classes which are 
+ConsoleColor and ScreenColor, for decorating the program.
 
-## Program's design 
+### ♥ Class `Book` 
+Represents a book and each book will have
+their own details which are used to create attributes.
+In addition, IDs of each book will be created automatically.
+### ♥ Class `BookDB`
+Used for managing all data files of this app
+such as, adding, finding and updating books.
+### ♥ Class `Display`
+Displays all the features on Python Turtle Graphic screen, and a table of data on console. 
+### ♥ Class `ConsoleColor` and `ScreenColor`
+These two classes are used for decorating color, format and theme in the application.
 
-My application consists of 3 main classes that are 
-`Book`, `BookDB` and `Display`. and have 2 classes are 
-ConsoleColor and ScreenColor for decorate the program.
-
-###  Class `Book` 
-This class is used to represent a book and each book will have
-their own details which was used to create attributes.
-In addition, each book will have their own ID that was created
-automatically.
-###  Class `BookDB`
-This class is used to manage all about data file in this app.
-and have two attributes that are
-###  Class `Display`
-This class is used to display all the features on Python Turtle
-Graphic screen and show the table of data on console.
-###  Class `ConsoleColor` and `ScreenColor`
-This 2 class are use for decorating color,format and theme in application.
-
-###  UML class diagram 
+### ♥ UML class diagram 
 ![img_1.png](book_collection_diagram.png)
 
-***
 
-## Code structure 
-
-This program consists of 5 python files for running program. 2 database
-files that are a json file and a txt file. And 3 folder of picture.
-###  Python file
-* `app.py ` : This file is used for **running program** and enter to the application.
-* `book.py `: This file is used for contain **Book** class.
-* `bookdatabase.py` : This file is used for contain **BookDB** class.
-* `display.py` : This file is used for contain **Display** class.
-* `color.py` : This file is used for contain **ScreenColor** and **ConsoleColor** class.
-###  Database file
-* `bookdatabase.json` : This is an example json file that contain all data of all books
-  in collection.
-* `fileID.txt` : This is an example txt file that contain all ID of book that
-  used to running ID in each book.
-###  Picture folder
-* `cover folder` : This folder is used to store all of book's cover picture.
-* `pointer folder` : This folder is used to store all of pointer picture that
-  used for decorate theme app.
-* `picture folder` : This folder is used to store all of decorated picture
-
+##♥ Code structure ♥
 ***
-  ### <p align=center>**Hope you got a great experience, Thank you**</p>
-***
+This program consists of five python files to run the program. 
+Two database files, which are a json file and a txt file, 
+and three folders of pictures.  
+### ♥ Python file
+* `app.py ` : Used to start and **running** the program.
+* `book.py `: Contains **Book** class.
+* `bookdatabase.py` : Contains **BookDB** class.
+* `display.py` : Contains **Display** class.
+* `color.py` : Contains **ScreenColor** class and **ConsoleColor** class.
+### ♥ Database file
+* `bookdatabase.json` : Displays an example of a json file which contains all 
+  data of books in the collection.
+* `fileID.txt` : Displays an example of a txt file which contains IDs of 
+  all books which is used for running ID of each book.
+### ♥ Picture folder
+* `cover folder` : Stores all books' cover files.
+* `pointer folder` : Stores pointer's icons, which are parts of the themes' decoration.
+* `picture folder` : Stores all pictures for decoration.
+
+---
+ ###**Hope you have a great experience. Thank you. ♥**
+
+---   
