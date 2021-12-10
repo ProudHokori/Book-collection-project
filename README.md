@@ -12,8 +12,9 @@ and manage the data of their book collection.
 ---
 ## ♥ Overview and features ♥
 
-
-![img_1.png](md/menu_page.png)
+<p align='center'>
+<img src="https://github.com/ProudHokori/Book-collection-project/blob/main/md/menu_page.png">
+</p>
 
 This application is used for managing everything about book collection data. 
 And these are all features of my application.
